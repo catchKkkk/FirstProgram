@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My test</title>
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+</head>
+<body>
+
+	<!--登录模块结束-->
+		<div id="loginBox">
+			<div class="login-item">
+				<input type="text" name="txtUser" id="txtUser" placeholder="请输入用户名"/>
+			</div>
+			<div class="login-item">
+				<input type="password" name="txtPwd" id="txtPwd" placeholder="请输入密码"/>
+			</div>
+			<div class="login-item">
+				<a href="javascript:;">登录</a>
+			</div>
+		</div>
+	<!--登录模块结束-->
+
+	<!--注册模块开始-->
+		<div id="regBox">
+			<div class="reg-item">
+				<input type="text" name="" id="" placeholder="请输入用户名"/>
+			</div>
+			<div class="reg-item">
+				<input type="password" name="" id="" placeholder="请输入密码"/>
+			</div>
+			<div class="reg-item">
+				<input type="text" name="" id="" placeholder="请输入邮箱"/>
+			</div>
+			<div class="reg-item">
+				<input type="tel" name="" id="" placeholder="请输入联系电话"/>
+			</div>
+			<div class="reg-item">
+				<a href="javascript:;">注册</a>
+			</div>
+		</div>
+	<!--注册模块结束-->
+
+	<!--广告信息开始-->
+	<div class="top-con">
+		<div class="tc-close"><a href="javascript:;">✘</a></div>
+		<a href="javascript:;">
+			<div style="width:50%; height:100%; position:absolute; left:0; background:#ff002f;"></div>
+			<div style="width:50%; height:100%; position:absolute; right:0;background:#fec41b;"></div>
+			<img src="img/h-top.jpg" width="990" height="80" style="position:relative; top:0; margin:0 auto; z-index:2; display:block;">
+		</a>
+	</div>
+	<!--广告信息结束-->
+
+	<!--主页开始-->
+	<div id="mainPage">
+		<!--页面导航开始-->
+		<div id="site-nav">
+
+			<p class="helloBOX">
+				<em>喵，欢迎来到天猫</em>
+				<a href="javascript:;" onclick="showLoginBox()">请登录</a>
+				<a href="javascript:;" onclick="showRegBox()">免费注册</a>
+			</p>
+
+			<ul class="site-nav-menu">
+				<li>
+					<div class="snm-tab">
+						<a class="li-a" href="javascript:;">我的淘宝▾</a>
+						<div class="snm-item">
+							<p><a class="li-a" href="javascript:;">已买到的宝贝</a></p>
+							<p><a class="li-a" href="javascript:;">已卖出的宝贝</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<a class="li-a" href="javascript:;"><em style="color:#FF0036; font-size:14px; margin-right:5px;">❤</em>我关注的品牌</a>
+				</li>
+
+				<li>
+					<a class="li-a" href="javascript:;">♛购物车0件</a>
+				</li>
+
+				<li>
+					<div class="snm-tab">
+						<a class="li-a" href="javascript:;">收藏夹▾</a>
+						<div class="snm-item">
+							<p><a class="li-a" href="javascript:;">收藏的宝贝</a></p>
+							<p><a class="li-a" href="javascript:;">收藏的店铺</a></p>
+						</div>
+					</div>
+				</li>
+
+
+				<li>
+					<div class="snm-phone">
+						<a class="li-a" href="javascript:;">手机版</a>
+						<div>
+							<a id="tp" href="javascript:;">
+								<img src="img/tophone.png">
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li><a class="li-a" href="javascript:;">淘宝网</a></li>
+				
+				<li>
+					<div class="snm-tab">
+						<a class="li-a" href="javascript:;">商家支持▾</a>
+						<div class="snm-item">
+							<div class="business-icon bi1">
+								<h3>商家：</h3>
+
+								<p>
+									<a class="li-a-ib" href="javascript:;">商家中心</a><a class="li-a-ib" href="javascript:;">商家进驻</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">运营服务</a><a class="li-a-ib" href="javascript:;">商家品控</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">商家工具</a><a class="li-a-ib" href="javascript:;">商家规则</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">天猫智库</a><a class="li-a-ib" href="javascript:;">喵言喵语</a>
+								</p>
+							</div>
+							<div class="business-icon bi2">
+								<h3>帮助</h3>
+								<p>
+									<a class="li-a-ib" href="javascript:;">帮助中心</a><a class="li-a-ib" href="javascript:;">问商友</a>
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="snm-tab">
+						<a class="li-a" href="javascript:;">网站导航▾</a>
+						<div class="snm-item">
+							<div class="navi nav1">
+								<h3>热点推荐Hot</h3>
+
+								<p>
+									<a class="li-a-ib" href="javascript:;">天猫超市</a>
+									<a class="li-a-ib" href="javascript:;">喵鲜生</a>
+									<a class="li-a-ib" href="javascript:;">科技新品</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">女装新品</a>
+									<a class="li-a-ib" href="javascript:;">酷玩街</a>
+									<a class="li-a-ib" href="javascript:;">内衣新品</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">试美妆</a>
+									<a class="li-a-ib" href="javascript:;">运动新品</a>
+									<a class="li-a-ib" href="javascript:;">时尚先生</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">精明妈咪</a>
+									<a class="li-a-ib" href="javascript:;">吃乐会</a>
+									<a class="li-a-ib" href="javascript:;">企业采购</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">会员积分</a>
+									<a class="li-a-ib" href="javascript:;">天猫国际</a>
+								</p>
+							</div>
+
+							<div class="navi nav2">
+								<h3>行业市场Market</h3>
+
+								<p>
+									<a class="li-a-ib" href="javascript:;">美妆</a>
+									<a class="li-a-ib" href="javascript:;">电器</a>
+									<a class="li-a-ib" href="javascript:;">女装</a>
+									<a class="li-a-ib" href="javascript:;">男装</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">女鞋</a>
+									<a class="li-a-ib" href="javascript:;">男鞋</a>
+									<a class="li-a-ib" href="javascript:;">内衣</a>
+									<a class="li-a-ib" href="javascript:;">箱包</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">运动</a>
+									<a class="li-a-ib" href="javascript:;">母婴</a>
+									<a class="li-a-ib" href="javascript:;">家装</a>
+									<a class="li-a-ib" href="javascript:;">医药</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">食品</a>
+									<a class="li-a-ib" href="javascript:;">配饰</a>
+									<a class="li-a-ib" href="javascript:;">汽车</a>
+								</p>
+							</div>
+    
+							<div class="navi nav3">
+								<h3>品牌风尚Brand</h3>
+
+								<p>
+									<a class="li-a-ib" href="javascript:;">尚天猫</a>
+									<a class="li-a-ib" href="javascript:;">大牌街</a>
+									<a class="li-a-ib" href="javascript:;">潮牌街</a>
+								</p>
+								<p>
+									<a class="li-a-ib" href="javascript:;">天猫原创</a>
+									<a class="li-a-ib" href="javascript:;">什么牌子好</a>
+								</p>
+							</div>
+							    
+							<div class="navi nav4">
+								<h3>服务指南Help</h3>
+
+								<p>
+									<a class="li-a-ib" href="javascript:;">帮助中心</a>
+									<a class="li-a-ib" href="javascript:;">品质保障</a>
+									<a class="li-a-ib" href="javascript:;">特色服务</a>
+									<a class="li-a-ib" href="javascript:;">7天退换货</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<!--页面导航结束-->
+
+		<!--搜索开始-->
+		<div id="header">
+			<div class="header-area">
+				<div class="header-content">
+					<form method="get" action="javascript:;">
+						
+						<input autocomplete="autocomplete" 
+						id="mq" type="text" name="search" placeholder="商品/店家">
+						<button type="submit">搜索</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--搜索结束-->
+		
+		<!--页面内容开始-->
+		<div id="content">
+			<!--内容导航开始-->
+			<div class="main-nav">
+				<div class="inner-con">
+					<a href="javascript:;">天猫超市</a>
+					<a href="javascript:;">天猫国际</a>
+					<a href="javascript:;">天猫会员</a>
+					<a href="javascript:;">品牌街</a>
+					<a href="javascript:;">电器城</a>
+					<a href="javascript:;">喵鲜生</a>
+					<a href="javascript:;">医药馆</a>
+					<a href="javascript:;">营业厅</a>
+					<a href="javascript:;">魅力惠</a>
+					<a href="javascript:;">飞猪旅行</a>
+					<a href="javascript:;">苏宁易购</a>
+				</div>
+			</div>
+			<!--内容导航结束-->
+
+			<!--轮播开始-->
+			<div class="imgs-flash">
+				
+				<div class="nav-box">
+					<div class="aside-nav">
+						<ul>
+
+							<li><a href="javascript:;">女装 /内衣</a></li>
+							<li><a href="javascript:;">男装 /运动户外</a></li>
+							<li><a href="javascript:;">女鞋 /男鞋 /箱包</a></li>
+							<li><a href="javascript:;">化妆品 /个人护理</a></li>
+							<li><a href="javascript:;">腕表 /珠宝饰品 /眼镜</a></li>
+							<li><a href="javascript:;">手机 /数码 /电脑办公</a></li>
+							<li><a href="javascript:;">母婴玩具</a></li>
+							<li><a href="javascript:;">零食 /进口食品 /茶酒</a></li>
+							<li><a href="javascript:;">生鲜水果</a></li>
+							<li><a href="javascript:;"> 大家电 /生活电器</a></li>
+							<li><a href="javascript:;">家具建材</a></li>
+							<li><a href="javascript:;"> 汽车 /配件 /用品 </a></li>
+							<li><a href="javascript:;"> 家纺 /家饰 /鲜花 </a></li>
+							<li><a href="javascript:;">医药保健</a></li>
+							<li><a href="javascript:;">厨具 /收纳 /宠物</a></li>
+							<li><a href="javascript:;">图书音像</a></li>
+						</ul>
+					</div>
+					<div class="aside-nav-con">
+						<ul>
+							<li>
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">当季流行></div>
+									</div>
+									<div class="line-con">
+
+										<a href="javascript:;">夏季新品</a>
+										<a href="javascript:;">商场同款</a>
+										<a href="javascript:;">气质连衣裙</a>
+										<a href="javascript:;">印花衬衫</a>
+										<a href="javascript:;">牛仔单品</a>
+										<a href="javascript:;">百搭休闲裤</a>
+										<a href="javascript:;">无痕文胸</a>
+										<a href="javascript:;">潮流家居服</a>
+										<a href="javascript:;">超柔内裤</a>
+										<a href="javascript:;">百搭船袜</a>
+										<a href="javascript:;">运动文胸</a>
+									</div>
+								</div>
+								
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">精选上装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">T恤</a>
+										<a href="javascript:;">衬衫</a>
+										<a href="javascript:;">针织衫</a>
+										<a href="javascript:;">短外套</a>
+										<a href="javascript:;">小西装</a>
+										<a href="javascript:;">风衣</a>
+										<a href="javascript:;">卫衣</a>
+										<a href="javascript:;">毛衣</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">浪漫裙装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">连衣裙</a>
+										<a href="javascript:;">蕾丝连衣裙</a>
+										<a href="javascript:;">真丝连衣裙</a>
+										<a href="javascript:;">印花连衣裙</a>
+										<a href="javascript:;">半身裙</a>
+										<a href="javascript:;">蕾丝半身裙</a>
+										<a href="javascript:;">百褶裙</a>
+										<a href="javascript:;">牛仔裙</a>
+										<a href="javascript:;">背心裙</a>
+										<a href="javascript:;">a字裙</a>
+										<a href="javascript:;">棉麻连衣裙</a>
+										<a href="javascript:;">包臀裙</a>
+										<a href="javascript:;">长袖连衣裙</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">女士下装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">短裤</a>
+										<a href="javascript:;">牛仔裤</a>
+										<a href="javascript:;">休闲裤</a>
+										<a href="javascript:;">小脚裤</a>
+										<a href="javascript:;">哈伦裤</a>
+										<a href="javascript:;">背带裤</a>
+										<a href="javascript:;">西装裤</a>
+										<a href="javascript:;">阔腿裤</a>
+										<a href="javascript:;">打底裤</a>
+									</div>
+								</div>
+							
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">特色女装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">时尚套装</a>
+										<a href="javascript:;">休闲套装</a>
+										<a href="javascript:;">精选妈妈装</a>
+										<a href="javascript:;">大码女装</a>
+										<a href="javascript:;">职业套装</a>
+										<a href="javascript:;">优雅旗袍</a>
+										<a href="javascript:;">精致礼服</a>
+										<a href="javascript:;">婚纱</a>
+										<a href="javascript:;">唐装</a>
+										<a href="javascript:;">小码女装</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">文胸塑身></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">光面文胸</a>
+										<a href="javascript:;">运动文胸</a>
+										<a href="javascript:;">美背文胸</a>
+										<a href="javascript:;">聚拢文胸</a>
+										<a href="javascript:;">大杯文胸</a>
+										<a href="javascript:;">轻薄塑身</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">家居服></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">春夏家居服</a>
+										<a href="javascript:;">纯棉家居服</a>
+										<a href="javascript:;">莫代尔家居服</a>
+										<a href="javascript:;">真丝家居服</a>
+										<a href="javascript:;">春夏睡裙</a>
+										<a href="javascript:;">男士家居服</a>
+										<a href="javascript:;">情侣家居服</a>
+										<a href="javascript:;">性感睡裙</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">内裤背心></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">男士内裤</a>
+										<a href="javascript:;">女式内裤</a>
+										<a href="javascript:;">男士内裤多条装</a>
+										<a href="javascript:;">女士内裤多条装</a>
+										<a href="javascript:;">莫代尔内裤</a>
+										<a href="javascript:;">吊带背心</a>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">当季流行></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">秋季新品</a>
+										<a href="javascript:;">商场同款</a>
+										<a href="javascript:;">短袖T恤</a>
+										<a href="javascript:;">POLO衫</a>
+										<a href="javascript:;">短袖衬衫</a>
+										<a href="javascript:;">棉麻质感</a>
+										<a href="javascript:;">牛仔衬衫</a>
+										<a href="javascript:;">修身夹克</a>
+										<a href="javascript:;">潮流卫衣</a>
+										<a href="javascript:;">长袖衬衫</a>
+										<a href="javascript:;">束脚裤</a>
+										<a href="javascript:;">九分裤</a>
+										<a href="javascript:;">破洞牛仔裤</a>
+										<a href="javascript:;">健身套装</a>
+										<a href="javascript:;">划船机</a>
+										<a href="javascript:;">泳衣</a>
+										<a href="javascript:;">跑步鞋</a>
+										<a href="javascript:;">自行车</a>
+										<a href="javascript:;">平衡车</a>
+										<a href="javascript:;">篮球鞋</a>
+										<a href="javascript:;">帆布鞋</a>
+										<a href="javascript:;">休闲鞋</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">男士外套></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">夹克</a>
+										<a href="javascript:;">单西</a>
+										<a href="javascript:;">棒球服</a>
+										<a href="javascript:;">棉衣</a>
+										<a href="javascript:;">大衣</a>
+										<a href="javascript:;">风衣</a>
+										<a href="javascript:;">西服套装</a>
+										<a href="javascript:;">羽绒服</a>
+										<a href="javascript:;">皮衣</a>
+										<a href="javascript:;">运动服</a>
+										<a href="javascript:;">工装外套</a>
+										<a href="javascript:;">针织开衫</a>
+										<a href="javascript:;">马甲</a>
+									</div>
+								</div>	
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">男士裤装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">休闲裤</a>
+										<a href="javascript:;">牛仔裤</a>
+										<a href="javascript:;">西裤</a>
+										<a href="javascript:;">小脚裤</a>
+										<a href="javascript:;">运动裤</a>
+										<a href="javascript:;">针织裤</a>
+										<a href="javascript:;">工装裤</a>
+										<a href="javascript:;">9分裤</a>
+										<a href="javascript:;">短裤</a>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">当季流行></div>
+									</div>
+									<div class="line-con">
+
+										<a href="javascript:;">夏季新品</a>
+										<a href="javascript:;">商场同款</a>
+										<a href="javascript:;">气质连衣裙</a>
+										<a href="javascript:;">印花衬衫</a>
+										<a href="javascript:;">牛仔单品</a>
+										<a href="javascript:;">百搭休闲裤</a>
+										<a href="javascript:;">无痕文胸</a>
+										<a href="javascript:;">潮流家居服</a>
+										<a href="javascript:;">超柔内裤</a>
+										<a href="javascript:;">百搭船袜</a>
+										<a href="javascript:;">运动文胸</a>
+									</div>
+								</div>
+								
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">精选上装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">T恤</a>
+										<a href="javascript:;">衬衫</a>
+										<a href="javascript:;">针织衫</a>
+										<a href="javascript:;">短外套</a>
+										<a href="javascript:;">小西装</a>
+										<a href="javascript:;">风衣</a>
+										<a href="javascript:;">卫衣</a>
+										<a href="javascript:;">毛衣</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">浪漫裙装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">连衣裙</a>
+										<a href="javascript:;">蕾丝连衣裙</a>
+										<a href="javascript:;">真丝连衣裙</a>
+										<a href="javascript:;">印花连衣裙</a>
+										<a href="javascript:;">半身裙</a>
+										<a href="javascript:;">蕾丝半身裙</a>
+										<a href="javascript:;">百褶裙</a>
+										<a href="javascript:;">牛仔裙</a>
+										<a href="javascript:;">背心裙</a>
+										<a href="javascript:;">a字裙</a>
+										<a href="javascript:;">棉麻连衣裙</a>
+										<a href="javascript:;">包臀裙</a>
+										<a href="javascript:;">长袖连衣裙</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">女士下装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">短裤</a>
+										<a href="javascript:;">牛仔裤</a>
+										<a href="javascript:;">休闲裤</a>
+										<a href="javascript:;">小脚裤</a>
+										<a href="javascript:;">哈伦裤</a>
+										<a href="javascript:;">背带裤</a>
+										<a href="javascript:;">西装裤</a>
+										<a href="javascript:;">阔腿裤</a>
+										<a href="javascript:;">打底裤</a>
+									</div>
+								</div>
+							
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">特色女装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">时尚套装</a>
+										<a href="javascript:;">休闲套装</a>
+										<a href="javascript:;">精选妈妈装</a>
+										<a href="javascript:;">大码女装</a>
+										<a href="javascript:;">职业套装</a>
+										<a href="javascript:;">优雅旗袍</a>
+										<a href="javascript:;">精致礼服</a>
+										<a href="javascript:;">婚纱</a>
+										<a href="javascript:;">唐装</a>
+										<a href="javascript:;">小码女装</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">文胸塑身></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">光面文胸</a>
+										<a href="javascript:;">运动文胸</a>
+										<a href="javascript:;">美背文胸</a>
+										<a href="javascript:;">聚拢文胸</a>
+										<a href="javascript:;">大杯文胸</a>
+										<a href="javascript:;">轻薄塑身</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">家居服></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">春夏家居服</a>
+										<a href="javascript:;">纯棉家居服</a>
+										<a href="javascript:;">莫代尔家居服</a>
+										<a href="javascript:;">真丝家居服</a>
+										<a href="javascript:;">春夏睡裙</a>
+										<a href="javascript:;">男士家居服</a>
+										<a href="javascript:;">情侣家居服</a>
+										<a href="javascript:;">性感睡裙</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">内裤背心></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">男士内裤</a>
+										<a href="javascript:;">女式内裤</a>
+										<a href="javascript:;">男士内裤多条装</a>
+										<a href="javascript:;">女士内裤多条装</a>
+										<a href="javascript:;">莫代尔内裤</a>
+										<a href="javascript:;">吊带背心</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">精选上装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">T恤</a>
+										<a href="javascript:;">衬衫</a>
+										<a href="javascript:;">针织衫</a>
+										<a href="javascript:;">短外套</a>
+										<a href="javascript:;">小西装</a>
+										<a href="javascript:;">风衣</a>
+										<a href="javascript:;">卫衣</a>
+										<a href="javascript:;">毛衣</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">浪漫裙装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">连衣裙</a>
+										<a href="javascript:;">蕾丝连衣裙</a>
+										<a href="javascript:;">真丝连衣裙</a>
+										<a href="javascript:;">印花连衣裙</a>
+										<a href="javascript:;">半身裙</a>
+										<a href="javascript:;">蕾丝半身裙</a>
+										<a href="javascript:;">百褶裙</a>
+										<a href="javascript:;">牛仔裙</a>
+										<a href="javascript:;">背心裙</a>
+										<a href="javascript:;">a字裙</a>
+										<a href="javascript:;">棉麻连衣裙</a>
+										<a href="javascript:;">包臀裙</a>
+										<a href="javascript:;">长袖连衣裙</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">女士下装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">短裤</a>
+										<a href="javascript:;">牛仔裤</a>
+										<a href="javascript:;">休闲裤</a>
+										<a href="javascript:;">小脚裤</a>
+										<a href="javascript:;">哈伦裤</a>
+										<a href="javascript:;">背带裤</a>
+										<a href="javascript:;">西装裤</a>
+										<a href="javascript:;">阔腿裤</a>
+										<a href="javascript:;">打底裤</a>
+									</div>
+								</div>
+							
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">特色女装></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">时尚套装</a>
+										<a href="javascript:;">休闲套装</a>
+										<a href="javascript:;">精选妈妈装</a>
+										<a href="javascript:;">大码女装</a>
+										<a href="javascript:;">职业套装</a>
+										<a href="javascript:;">优雅旗袍</a>
+										<a href="javascript:;">精致礼服</a>
+										<a href="javascript:;">婚纱</a>
+										<a href="javascript:;">唐装</a>
+										<a href="javascript:;">小码女装</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">文胸塑身></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">光面文胸</a>
+										<a href="javascript:;">运动文胸</a>
+										<a href="javascript:;">美背文胸</a>
+										<a href="javascript:;">聚拢文胸</a>
+										<a href="javascript:;">大杯文胸</a>
+										<a href="javascript:;">轻薄塑身</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">家居服></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">春夏家居服</a>
+										<a href="javascript:;">纯棉家居服</a>
+										<a href="javascript:;">莫代尔家居服</a>
+										<a href="javascript:;">真丝家居服</a>
+										<a href="javascript:;">春夏睡裙</a>
+										<a href="javascript:;">男士家居服</a>
+										<a href="javascript:;">情侣家居服</a>
+										<a href="javascript:;">性感睡裙</a>
+									</div>
+								</div>
+
+								<div class="anc-con clearfix">
+									<div class="line-title">
+										<div class="title-text">内裤背心></div>
+									</div>
+									<div class="line-con">
+										<a href="javascript:;">男士内裤</a>
+										<a href="javascript:;">女式内裤</a>
+										<a href="javascript:;">男士内裤多条装</a>
+										<a href="javascript:;">女士内裤多条装</a>
+										<a href="javascript:;">莫代尔内裤</a>
+										<a href="javascript:;">吊带背心</a>
+									</div>
+								</div>
+							</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+							<li>15</li>
+							<li>16</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+					
+				<div class="bg-f bg-color0">
+					<a href="javascript:;">
+						<img class="bg-img" src="img/bg0.jpg">
+						<div class="advert-is1 mg">
+							<img src="img/advert-is-0.jpg">
+						</div>
+						<div class="advert-is2 mg">
+							<img src="img/advert-is-1.jpg">
+						</div>
+					</a>
+				</div>
+				
+				<div class="bg-f bg-color0">
+					<a href="javascript:;">
+						<img class="bg-img" src="img/bg1.jpg">
+						<div class="advert-is1 mg">
+							<img src="img/advert-is-2.jpg">
+						</div>
+						<div class="advert-is2 mg">
+							<img src="img/advert-is-3.jpg">
+						</div>
+					</a>
+				</div>
+
+				<div class="bg-f bg-color0">
+					<a href="javascript:;">
+						<img class="bg-img" src="img/bg2.jpg">
+					</a>
+					<div class="advert-is1 mg">
+							<img src="img/advert-is-4.jpg">
+						</div>
+						<div class="advert-is2 mg">
+							<img src="img/advert-is-5.jpg">
+					</div>
+				</div>
+
+				<div class="bg-f bg-color1">
+					<a href="javascript:;">
+						<img class="bg-img" src="img/bg3.jpg">
+						<div class="advert-is1 mg">
+							<img src="img/advert-is-0.jpg">
+						</div>
+						<div class="advert-is2 mg">
+							<img src="img/advert-is-1.jpg">
+						</div>
+					</a>
+				</div>
+				
+				<div class="bg-f bg-color2">
+					<a href="javascript:;">
+						<img class="bg-img" src="img/bg4.jpg">
+						<div class="advert-is1 mg">
+							<img src="img/advert-is-2.jpg">
+						</div>
+						<div class="advert-is2 mg">
+							<img src="img/advert-is-3.jpg">
+						</div>
+						
+					</a>
+				</div>
+
+				<div class="bg-f bg-color3">
+					<a href="javascript:;">
+						<img class="bg-img" src="img/bg5.jpg">
+						<div class="advert-is1 mg">
+							<img src="img/advert-is-4.jpg">
+						</div>
+						<div class="advert-is2 mg">
+							<img src="img/advert-is-5.jpg">
+						</div>
+					</a>
+				</div>
+
+				<div class="imgs-btn">
+					<ul>
+						<li class="active">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+			</div>
+			<!--轮播结束-->
+
+			<!--内容顶部信息开始-->
+			<div class="title-con">
+					<div class="title-inner-con">
+						<i style="width:18px;"><img src="img/title-inner-con.jpg" width="18" height="18"></i>
+						<span>您的专属活动</span>
+					</div>
+					<div class="tca-center">
+						<div class="title-con-ative">
+							<ul>
+								<li><a href="javascript:;"><img src="img/con-bg0.jpg"></a></li>
+								<li><a href="javascript:;"><img src="img/con-bg1.jpg"></a></li>
+								<li><a href="javascript:;"><img src="img/con-bg2.jpg"></a></li>
+								<li><a href="javascript:;"><img src="img/con-bg3.jpg"></a></li>
+								<li><a href="javascript:;"><img src="img/con-bg4.jpg"></a></li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<!--内容顶部信息结束-->
+
+			<!--内容推荐区开始-->
+			<div class="con-recom">
+				<div class="cr-center">
+					<div class="aside-live live-left">
+						<a href="javascript:;">
+							<img src="img/aside-bg0.png">
+						</a>
+					</div>
+					
+					<div class="aside-live live-right">
+						<a href="javascript:;">
+							<img src="img/aside-bg1.jpg">
+						</a>
+					</div>
+
+					<div class="brand-list min-br-list">
+						<ul class="brand-con">
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand1.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥50</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand2.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥500</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand3.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥100</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand4.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥60</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand5.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">关注人数:206</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand6.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥2000</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand7.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">关注人数:2000</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand8.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥360</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand9.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥50</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand10.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥450</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand11.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">关注人数:510</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand12.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥100</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand13.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥600</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand14.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥250</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand15.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥550</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand16.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥700</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand17.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">关注人数:1000</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand18.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">关注人数:20000</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand19.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">关注人数:2800</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand20.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥700</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand21.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥300</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand22.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥500</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand23.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥700</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="brand-item">
+									<a href="javascript:;"><img src="img/brand23.jpg"></a>
+									<a class="comein" href="javascript:;">
+										<p class="comein-p">优惠劵¥700</p>
+										<p class="comein-btn">点击进入</p>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<!--内容推荐区结束-->
+
+			<!--body品质生活开始 238 476-->
+			<div class="body-life">
+				<div class="bc-center">
+
+					<div class="body-life-con">
+						<div class="blife-title">潮流前沿</div>
+						<a href="javascript:;">
+							<div class="blife-con">焕发</div>
+							<div class="blife-p">品牌精选新品</div>
+							<div class="con-box">
+								<img src="img/body-1-1.png">
+							</div>
+						</a>
+						<a href="javascript:;">
+							<div class="blife-con">全球时尚</div>
+							<div class="blife-p">大牌精致时尚</div>
+							<div class="con-box">
+								<img src="img/body-1-2.jpg">
+							</div>
+						</a>
+					</div>
+					
+					<div class="body-life-con">
+						<div class="blife-title">手机酷玩</div>
+						<a href="javascript:;">
+							<div class="blife-con">手机馆</div>
+							<div class="blife-p">限抢600元手机卷</div>
+							<div class="con-box">
+								<img src="img/body-2-1.png">
+							</div>
+						</a>
+						<a href="javascript:;">
+							<div class="blife-con">酷玩街</div>
+							<div class="blife-p">超炫创意只能</div>
+							<div class="con-box">
+								<img src="img/body-2-2.jpg">
+							</div>
+						</a>
+					</div>
+
+					<div class="body-life-con">
+						<div class="blife-title">品质生活</div>
+						<a href="javascript:;">
+							<div class="blife-con">必抢</div>
+							<div class="blife-p">居家必备不可错过</div>
+							<div class="con-box">
+								<img src="img/body-3-1.jpg">
+							</div>
+						</a>
+						<a href="javascript:;">
+							<div class="blife-con">喵鲜生</div>
+							<div class="blife-p">全球好品甄选</div>
+							<div class="con-box">
+								<img src="img/body-3-2.jpg">
+							</div>
+						</a>
+					</div>
+
+					<div class="body-life-con">
+						<div class="blife-title">国际海沟</div>
+						<a href="javascript:;">
+							<div class="blife-con">识货</div>
+							<div class="blife-p">最热全球好货</div>
+							<div class="con-box">
+								<img src="img/body-4-1.jpg">
+							</div>
+						</a>
+						<a href="javascript:;">
+							<div class="blife-con">天猫国际官方直营</div>
+							<div class="blife-p">官方进口直采</div>
+							<div class="con-box">
+								<img src="img/body-4-2.jpg">
+							</div>
+						</a>
+					</div>
+
+					<div class="body-life-con">
+						<div class="blife-title">个性推荐</div>
+						<a href="javascript:;">
+							<div class="blife-con">焕新家</div>
+							<div class="blife-p">理想生活家</div>
+							<div class="con-box">
+								<img src="img/body-5-1.jpg">
+							</div>
+						</a>
+						<a href="javascript:;">
+							<div class="blife-con">心水礼物</div>
+							<div class="blife-p">最全送礼单</div>
+							<div class="con-box">
+								<img src="img/body-5-2.jpg">
+							</div>
+						</a>
+					</div>	
+
+				</div>
+			</div>
+			<!--body品质生活结束-->
+			
+			<!--广告开始-->
+			<div class="advert">
+				<a href="javascript:;">
+					<img class="img1" src="img/mid-advert1.jpg">
+				</a>
+			</div>
+			<!--广告结束-->
+			
+			<!--美丽人生开始-->
+			<div class="f-beauty">
+
+				<div class="f-beauty-title">
+					<div class="fb-inline fb-th">美丽人生</div>
+					<div class="fb-inline fb-p">FASHION &amp; BEAUTY</div>
+					<div class="fb-inline fb-a">       
+						<a href="javascript:;">连衣裙</a>
+						<a href="javascript:;">T恤男</a>
+						<a href="javascript:;">美容护肤</a>
+						<a href="javascript:;">休闲男鞋</a>
+						<a href="javascript:;">黄金项链</a>
+						<a href="javascript:;">单鞋</a>
+						<a href="javascript:;">女包</a>
+						<a href="javascript:;">文胸</a>
+						<a href="javascript:;">大牌腕表</a>
+					</div>
+				</div>
+
+				<div class="f-beauty-con">
+					<div class="fbc-float fb-con-left">
+						<a href="javascript:;">
+							<img src="img/f-beauty-1.jpg" width="100%" height="330px">
+							<div class="fb-con-bottom">
+								<div class="fbc-title">大牌男装</div>
+								<div class="fbc-p">国际大品牌登场</div>
+								<div class="fbc-miao"></div>
+							</div>
+						</a>
+					</div>
+
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">扔掉格子衫</div>
+							<div class="fci-p">不一样的IT男</div>
+							<img src="img/f-beauty-3.jpg">
+						</a>
+					</div>
+					
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">面子最重要</div>
+							<div class="fci-p">会呼吸的面膜</div>
+							<img src="img/f-beauty-4.jpg">
+						</a>
+					</div>
+
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">西部牛仔风</div>
+							<div class="fci-p">高邦皮鞋大惠</div>
+							<img src="img/f-beauty-8.jpg">
+						</a>
+					</div>
+
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">时尚女魔头</div>
+							<div class="fci-p">没有高度可不行</div>
+							<img src="img/f-beauty-5.jpg">
+						</a>
+					</div>
+
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">旅行的距离</div>
+							<div class="fci-p">只差一个登机箱</div>
+							<img src="img/f-beauty-6.jpg">
+						</a>
+					</div>
+
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">华而不贵</div>
+							<div class="fci-p">水钻头饰精选</div>
+							<img src="img/f-beauty-9.jpg">
+						</a>
+					</div>
+
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">一波三折</div>
+							<div class="fci-p">挺好的女人秘密</div>
+							<img src="img/f-beauty-7.jpg">
+						</a>
+					</div>
+
+					<div class="fbc-float fb-con-item">
+						<a href="javascript:;">
+							<div class="fci-title">每时每刻的享受</div>
+							<div class="fci-p">名师设计的钟表</div>
+							<img src="img/f-beauty-10.jpg">
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<!--美丽人生开始-->
+			
+			<!--广告开始-->
+			<div class="advert">
+				<a href="javascript:;">
+					<img class="img2" src="img/fb-advert.jpg">
+				</a>
+			</div>
+			<!--广告结束-->
+
+			<!--imgshow开始-->
+			<div class="img-show">
+				<div class="img-show-title">
+					<span><em>♡</em>猜你喜欢</span>
+				</div>
+				<div class="img-show-module">
+					<ul>
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc0.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>【6288元预定】Apple/苹果 iPhone 7 Plus 128G 全网通4G智能手机</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>6288.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc1.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>国行Apple/苹果 iPad mini 4 128G 7.9英寸迷你mini4平板电脑正品</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>3218.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc2.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>Gree/格力 KFR-72LW/(725511)NhAaD-3 3匹定频冷暖智能空调客厅</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>7399.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc3.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>【官方旗舰店】Kindle Paperwhite3亚马逊电子书阅读器电纸书</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>958.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc4.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>科沃斯地宝DD35扫地机器人吸尘器智能家用超薄全自动洗擦地机拖地</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>1999.0</em></span>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+
+					<ul>
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc5.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>Apple/苹果 13 英寸 1.8GHz 处理器 MacBook Air超轻薄笔记本电脑</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>6488.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc6.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>Xiaomi/小米 小米电视4A 55英寸 4k超高清液晶智能语音电视机</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>2899.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc7.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>Haier/海尔 BCD-572WDENU1冰箱双门双开门对开门变频无霜家用</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>3699.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc8.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>Dyson戴森 吹风机 Supersonic HD01 紫红色</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>2990.0</em></span>
+								</div>
+
+							</a>
+						</li>
+
+						<li class="is-item">
+							<a href="javascript:;">
+
+								<span class="is-show">
+									<img src="img/imgc9.jpg">
+								</span>
+
+								<div class="is-info">
+									<span class="is-info-title">
+										<em>Joyoung/九阳 JYL-Y99 加热破壁料理机豆浆全自动家用多功能辅食</em>
+									</span>
+
+									<span class="is-info-p"><i>¥</i><em>1999.0</em></span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--imgshow结束-->
+			
+			<!--页尾开始-->
+			<div class="footer">
+				<a href="javascript:;">
+					<div class="ensure"></div>
+				</a>
+				<div class="footer-b">
+					<div class="fb-center">
+						<p class="fb-t">     
+							<a href="javascript:;">关于天猫</a>
+							<a href="javascript:;">帮助中心</a>
+							<a href="javascript:;">开放平台</a>
+							<a href="javascript:;">诚聘英才</a>
+							<a href="javascript:;">联系我们</a>
+							<a href="javascript:;">网站合作</a>
+							<a href="javascript:;">法律声明及隐私权政策</a>
+							<a href="javascript:;">知识产权</a>
+							<a href="javascript:;">廉正举报</a>
+							<a href="javascript:;">规则意见征集</a>
+						</p>
+						<p class="fb-m">      
+							<a href="javascript:;">阿里巴巴集团</a>
+							<a href="javascript:;">淘宝网</a>
+							<a href="javascript:;">天猫</a>
+							<a href="javascript:;">聚划算</a>
+							<a href="javascript:;">全球速卖通</a>
+							<a href="javascript:;">阿里巴巴国际交易市场</a>
+							<a href="javascript:;">1688</a>
+							<a href="javascript:;">阿里妈妈</a>
+							<a href="javascript:;">飞猪</a>
+							<a href="javascript:;">阿里云计算</a>
+							<a href="javascript:;">YunOS</a>
+							<a href="javascript:;">阿里通信</a>
+							<a href="javascript:;">万网</a>
+							<a href="javascript:;">高德</a>
+							<a href="javascript:;">UC</a>
+							<a href="javascript:;">友盟</a>
+							<a href="javascript:;">虾米</a>
+							<a href="javascript:;">阿里星球</a>
+							<a href="javascript:;">来往</a>
+							<a href="javascript:;">钉钉</a>
+							<a href="javascript:;">支付宝</a>
+						</p>
+						
+						<p class="fb-b">
+							<a href="javascript:;">互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005</a>
+						</p>
+
+						<p class="fb-b">
+							<a href="javascript:;">© 2003-2017 TMALL.COM 版权所有</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--页尾结束-->
+
+		</div>
+		<!--页面内容结束-->
+	</div>
+	<!--主页结束-->
+
+	<!--脚本开始-->
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+	<!--脚本结束-->
+</body>
+</html>
